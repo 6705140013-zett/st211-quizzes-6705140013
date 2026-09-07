@@ -1,4 +1,4 @@
-from solution import BankAccount
+from bank import BankAccount
 
 shared_account = BankAccount(100)
 
@@ -8,5 +8,4 @@ def test_a_deposit():
 
 def test_b_withdraw():
     shared_account.withdraw(30)
-    # Balance becomes 120 because test_a_deposit already modified shared_account
     assert shared_account.balance == 120
